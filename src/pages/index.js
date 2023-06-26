@@ -21,7 +21,7 @@ export default ({ data }) => (
     <Seo title="Home" />
     <div>
       <h1>JLFreedom's Thoughts</h1>
-      <h4>{ data.allMarkdownRemark.totalCount }</h4>
+      <h4>{ data.allMarkdownRemark.totalCount } Posts</h4>
       {
         data.allMarkdownRemark.edges.map(({node}) => (
           <div key={node.id}>
